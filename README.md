@@ -29,7 +29,9 @@ This application requires a MySQL database named `country_search`, with a table 
 ## Running the Application
 1. **Start the Server:**
    - In your terminal, navigate to the project directory and run:
+     ```bash
      node server.js
+     ```
 
 2. **Launch the Application:**
    - Open your browser and visit `http://localhost:3000` to access the app.
