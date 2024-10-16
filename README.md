@@ -40,9 +40,9 @@ This application requires a MySQL database named `country_search`, with a table 
    - Enter any part of a country name in the search box. Results appear in real time, regardless of case.
 
 ## Project Structure
-- **Frontend Files:** `index.html`, `styles.css`, `app.js`
+- **Frontend Files:** `index.html`, `styles.css`, `script.js`
 - **Backend Files:** `server.js`
-- **Database:** `countries.sql` (SQL dump for initial setup)
+- **Database:** `country_search.sql` (SQL dump for initial setup)
 
 ## Future Improvements
 - **Pagination:** To efficiently handle larger datasets.
