@@ -1,0 +1,129 @@
+/* Gradient background for the body */
+body {
+    font-family: 'Arial', sans-serif; /* Set a modern sans-serif font */
+    background: linear-gradient(to bottom right, #A9C0E1, #F0F4F8); /* Gradient background */
+    color: #333; /* Dark grey text color for better contrast */
+    margin: 0; /* Reset margin */
+    padding: 0; /* Reset padding */
+    display: flex; /* Flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+}
+
+.container {
+    max-width: 500px; /* Maximum width of the container */
+    margin: 20px; /* Margin for responsiveness */
+    padding: 30px; /* Inner padding for content */
+    background-color: #ffffff; /* White background for the card */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    border-radius: 10px; /* Rounded corners */
+    text-align: center; /* Center text inside the container */
+    animation: fadeIn 0.5s ease-in-out; /* Fade-in animation */
+}
+
+/* Keyframe for fade-in effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Start transparent */
+    }
+    to {
+        opacity: 1; /* End fully visible */
+    }
+}
+
+h1 {
+    color: #2C3E50; /* Dark slate blue color for heading */
+    font-size: 2.5em; /* Size for main heading */
+    margin-bottom: 20px; /* Space below the heading */
+    font-family: 'Georgia', serif; /* Serif font for elegance */
+}
+
+/* Input field styles */
+input[type="text"] {
+    width: calc(100% - 24px); /* Full width with padding adjustment */
+    padding: 12px; /* Padding for input */
+    margin: 10px 0; /* Margin for spacing */
+    border: 2px solid #2C3E50; /* Dark slate blue border */
+    border-radius: 5px; /* Rounded edges */
+    font-size: 16px; /* Font size for input text */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition */
+}
+
+/* Focus styles for input */
+input[type="text"]:focus {
+    outline: none; /* No outline on focus */
+    border-color: #1A242F; /* Darker shade on focus */
+    box-shadow: 0 0 5px rgba(28, 39, 52, 0.5); /* Glow effect */
+}
+
+/* Button styles */
+button {
+    padding: 12px 20px; /* Padding for button */
+    background-color: #F39C12; /* Golden-yellow button color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded edges */
+    cursor: pointer; /* Pointer cursor */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s, transform 0.3s; /* Transition effects */
+}
+
+/* Hover effect for button */
+button:hover {
+    background-color: #D68910; /* Darker yellow on hover */
+    transform: translateY(-2px); /* Subtle lift */
+}
+
+/* Results container styles */
+#resultsContainer {
+    margin-top: 20px; /* Margin above results */
+    padding: 10px; /* Inner padding */
+    border: 1px solid #ddd; /* Light grey border */
+    border-radius: 5px; /* Rounded edges */
+    background-color: #f8f9fa; /* Very light grey background */
+    max-height: 300px; /* Max height */
+    overflow-y: auto; /* Scrollable for long results */
+}
+
+/* Styles for each result */
+.result {
+    padding: 10px; /* Inner padding */
+    border-bottom: 1px solid #eee; /* Bottom border */
+    text-align: left; /* Left align text */
+    font-size: 18px; /* Font size for result text */
+    color: #343a40; /* Darker text color */
+    transition: background-color 0.2s; /* Smooth background transition */
+}
+
+/* Remove border for last result */
+.result:last-child {
+    border-bottom: none; /* No bottom border for last result */
+}
+
+/* Hover effect for results */
+.result:hover {
+    background-color: #e2e6ea; /* Light highlight effect on hover */
+}
+
+/* Styles for no results message */
+.no-results {
+    color: #dc3545; /* Red color for error message */
+    font-weight: bold; /* Bold text */
+    margin-top: 10px; /* Margin above message */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px; /* Adjust padding on mobile */
+    }
+
+    h1 {
+        font-size: 2em; /* Smaller heading size */
+    }
+
+    input[type="text"], button {
+        font-size: 14px; /* Smaller font size on mobile */
+    }
+}
