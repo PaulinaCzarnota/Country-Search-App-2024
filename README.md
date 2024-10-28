@@ -107,4 +107,4 @@ This application requires a MySQL database named `country_search`, which contain
 
 ## Conclusion
 
-The Country Search Application is a practical demonstration of integrating frontend and backend technologies to deliver an effective search experience. It serves as a solid foundation for future feature additions and performance enhancements.
+The Country Search Application is a practical demonstration of integrating frontend and backend technologies to deliver an effective search experience. It serves as a solid foundation for future feature additions and performance enhancements. 
